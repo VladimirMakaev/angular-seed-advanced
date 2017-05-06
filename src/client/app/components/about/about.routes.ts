@@ -1,8 +1,10 @@
 import { AboutComponent } from './about.component';
+import { Routes } from '@angular/router';
 
-export const AboutRoutes: Array<any> = [
+
+export const AboutRoutes: Routes = [
   {
     path: 'about',
-    component: AboutComponent
+    loadChildren: 'app/components/about/about.module#AboutModule'
   }
 ];
